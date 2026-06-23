@@ -1,16 +1,117 @@
-# React + Vite
+# Ajaia Docs
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A lightweight collaborative document editor inspired by Google Docs.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://ajaia-docs-ochre.vercel.app/
 
-## React Compiler
+## GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://github.com/tinaaswanii/ajaia-docs
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Features
+
+- User authentication
+- Create and edit documents
+- Rich text editor
+- Save and reopen documents
+- Upload `.txt` and `.md` files
+- Share documents with other users
+- Separate owned and shared documents
+- Persistent storage using Supabase
+
+---
+
+## Tech Stack
+
+### Frontend
+- React
+- Vite
+- Tailwind CSS
+- TipTap Editor
+
+### Backend / Database
+- Supabase
+- PostgreSQL
+- Supabase Auth
+
+### Deployment
+- Vercel
+
+---
+
+## Test Accounts
+
+### User 1
+Email: tina@test.com
+Password: password123
+
+### User 2
+Email: demo@test.com
+Password: password123
+
+---
+
+## Local Setup
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/tinaaswanii/ajaia-docs.git
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Create `.env`
+
+```env
+VITE_SUPABASE_URL=YOUR_SUPABASE_URL
+VITE_SUPABASE_ANON_KEY=YOUR_SUPABASE_KEY
+```
+
+### 4. Run Project
+
+```bash
+npm run dev
+```
+
+---
+
+## Implemented Features
+
+### Document Editing
+- Create documents
+- Rename documents
+- Rich text formatting
+- Save and reopen documents
+
+### File Upload
+- Upload `.txt`
+- Upload `.md`
+- Imported content becomes editable
+
+### Sharing
+- Share documents using email
+- Shared documents visible under "Shared With Me"
+
+### Persistence
+- All documents stored in Supabase
+- Sharing state persists after refresh/login
+
+---
+
+## Future Improvements
+
+- Real-time collaboration
+- Presence indicators
+- Comments
+- Version history
+- Export to PDF
+- Granular permissions
